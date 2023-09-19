@@ -1,41 +1,7 @@
-const Header = ({ course }) => {
-	return (
-		<div>
-			<h1>{course}</h1>
-		</div>
-	);
-};
+import Header from "./components/Header";
+import Content from "./components/Content";
+import Total from "./components/Total";
 
-const Content = ({
-	part1,
-	part2,
-	part3,
-	excercises1,
-	excercises2,
-	excercises3,
-}) => {
-	return (
-		<div>
-			<p>
-				{part1} {excercises1}
-			</p>
-			<p>
-				{part2} {excercises2}
-			</p>
-			<p>
-				{part3} {excercises3}
-			</p>
-		</div>
-	);
-};
-
-const Total = ({ excercises1, excercises2, excercises3 }) => {
-	return (
-		<div>
-			<p>Number of excercies {excercises1 + excercises2 + excercises3}</p>
-		</div>
-	);
-};
 
 const App = (props) => {
 	const course = "Half Stack Application Development";
