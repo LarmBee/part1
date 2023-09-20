@@ -1,8 +1,8 @@
-const Total = ({ excercises1, excercises2, excercises3 }) => {
+const Total = ({parts}) => {
 	return (
-		<div>
-			<p>Number of excercies {excercises1 + excercises2 + excercises3}</p>
-		</div>
+		<p>Total exercises completed
+		{parts.parts[0].exercises + parts.parts[1].exercises + parts.parts[2].exercises}
+		</p>
 	);
 };
 
